@@ -1,0 +1,39 @@
+{
+  "name": "stripe-dat",
+  "description": "track stripe charges via dat",
+  "version": "1.0.0",
+  "author": "Joe Hand <joe@hand.email>",
+  "bugs": {
+    "url": "https://github.com/joehand/stripe-dat/issues"
+  },
+  "devDependencies": {
+    "standard": "*",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/joehand/stripe-dat",
+  "keywords": [
+    "dat",
+    "stripe"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joehand/stripe-dat.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js | tap-spec"
+  },
+  "dependencies": {
+    "dat-node": "^3.5.1",
+    "debug": "^3.0.1",
+    "hypercore": "^6.7.0",
+    "hyperdiscovery": "^6.0.4",
+    "lodash.pick": "^4.4.0",
+    "ndjson": "^1.5.0",
+    "pump": "^1.0.2",
+    "stripe-charge-list": "^1.1.0",
+    "toiletdb": "^1.4.0"
+  }
+}
