@@ -19,7 +19,7 @@ sDat.getCharges(new Date('1/1/2017'), function (err) {
 
   // manually add a charge
   sDat.addCharge({
-    "id":"asdfasdf","amount":10000000,"created":1499366591,"currency":"usd"
+    'id': 'asdfasdf', 'amount': 10000000, 'created': 1499366591, 'currency': 'usd'
   }, function (err) {
     if (err) throw err
     console.log('added charge')

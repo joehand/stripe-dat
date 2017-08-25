@@ -2,7 +2,6 @@ var assert = require('assert')
 var hypercore = require('hypercore')
 var ChargeList = require('stripe-charge-list')
 var Charges = require('stripe-charge-list/charges')
-var pump = require('pump')
 var pick = require('lodash.pick')
 var discovery = require('hyperdiscovery')
 var debug = require('debug')('stripe-dat')
@@ -12,7 +11,7 @@ module.exports = StripeDat
 function StripeDat (key, storage, opts) {
   if (!(this instanceof StripeDat)) return new StripeDat(key, storage, opts)
   assert.ok(key, 'stripe-dat: stripe key required')
-  assert.ok(storage,'stripe-dat: dat storage path required')
+  assert.ok(storage, 'stripe-dat: dat storage path required')
   if (!opts) opts = {}
   var self = this
 
